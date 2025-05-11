@@ -12,7 +12,7 @@ const map = new maplibregl.Map({
 
 // Adiciona controles de navegação (zoom in/out)
 map.addControl(new maplibregl.NavigationControl());
-// test commit 1
+// test commit 2
 // Carrega o GeoJSON dos países da América do Sul
 map.on('load', () => {
     // Adiciona a fonte GeoJSON
