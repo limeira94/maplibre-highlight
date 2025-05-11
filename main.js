@@ -1,9 +1,9 @@
 
-const estiloDark = 'https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json';
+const styleDark = 'https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json';
 // Configurações do mapa principal
 const map = new maplibregl.Map({
     container: 'map', // ID do contêiner
-    style: estiloDark, // Estilo do mapa
+    style: styleDark, // Estilo do mapa
     center: [-55.7658, -15.7939], // Coordenadas centrais temporárias [lng, lat]
     zoom: 2, // Zoom inicial temporário
     doubleClickZoom: false, // Desativa o double-click zoom
@@ -12,7 +12,7 @@ const map = new maplibregl.Map({
 
 // Adiciona controles de navegação (zoom in/out)
 map.addControl(new maplibregl.NavigationControl());
-
+// test commit 1
 // Carrega o GeoJSON dos países da América do Sul
 map.on('load', () => {
     // Adiciona a fonte GeoJSON
